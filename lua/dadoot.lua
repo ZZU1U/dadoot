@@ -18,6 +18,19 @@ M.config = config
 -- you can also put some validation here for those.
 M.setup = function(args)
   M.config = vim.tbl_deep_extend("force", M.config, args or {})
+
+  local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+
+  parser_config.dadoot = {
+	  install_info = {
+		  url = "https://github.com/zzu1u/tree-sitter-dadoot", -- adjust to your path
+		  files = { "src/parser.c" },
+		  branch = "main",
+		  generate_requires_npm = true,
+		  requires_generate_from_grammar = true,
+	  },
+	  filetype = "dadoot",
+  }
 end
 
 M.hello = function()
