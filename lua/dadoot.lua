@@ -23,11 +23,11 @@ M.setup = function(args)
 
   parser_config.dadoot = {
 	  install_info = {
-		  url = "https://github.com/zzu1u/tree-sitter-dadoot", -- adjust to your path
+		  url = "/Users/dudu/projects/tree-sitter-dadoot", -- adjust to your path
 		  files = { "src/parser.c" },
 		  branch = "main",
-		  generate_requires_npm = true,
-		  requires_generate_from_grammar = true,
+		  -- generate_requires_npm = true,
+		  -- requires_generate_from_grammar = true,
 	  },
 	  filetype = "dadoot",
   }
