@@ -4,7 +4,7 @@
 
 ;; Top-level tasks
 (task
-  (priority) @constant
+  (task_priority) @constant
   ; (description) @string
   )
 
